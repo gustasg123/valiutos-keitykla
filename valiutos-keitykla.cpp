@@ -71,8 +71,8 @@ int main() {
 			case 1:
 				cout << "Iveskite suma EUR, kuria noresite pirkti GBP: ";
 				cin >> suma;
-				if (suma < 0) {
-					cout << "Suma negali buti neigiama. Bandykite dar karta.\n";
+				if (suma <= 0) {
+					cout << "Suma negali buti neigiama arba lygi nuliui. Bandykite dar karta.\n";
 					break;
 				}
 				rezultatas = pirktiValiuta(suma, GBP_Pirkti);
@@ -81,8 +81,8 @@ int main() {
 			case 2:
 				cout << "Iveskite suma EUR, kuria noresite pirkti USD: ";
 				cin >> suma;
-				if (suma < 0) {
-					cout << "Suma negali buti neigiama. Bandykite dar karta.\n";
+				if (suma <= 0) {
+					cout << "Suma negali buti neigiama arba lygi nuliui. Bandykite dar karta.\n";
 					break;
 				}
 				rezultatas = pirktiValiuta(suma, USD_Pirkti);
@@ -91,8 +91,8 @@ int main() {
 			case 3:
 				cout << "Iveskite suma EUR, kuria noresite pirkti INR: ";
 				cin >> suma;
-				if (suma < 0) {
-					cout << "Suma negali buti neigiama. Bandykite dar karta.\n";
+				if (suma <= 0) {
+					cout << "Suma negali buti neigiama arba lygi nuliui. Bandykite dar karta.\n";
 					break;
 				}
 				rezultatas = pirktiValiuta(suma, INR_Pirkti);
@@ -110,8 +110,8 @@ int main() {
 			case 1:
 				cout << "Iveskite suma GBP, kuria noresite parduoti EUR: ";
 				cin >> suma;
-				if (suma < 0) {
-					cout << "Suma negali buti neigiama. Bandykite dar karta.\n";
+				if (suma <= 0) {
+					cout << "Suma negali buti neigiama arba lygi nuliui. Bandykite dar karta.\n";
 					break;
 				}
 				rezultatas = parduotiValiuta(suma, GBP_Parduoti);
@@ -120,8 +120,8 @@ int main() {
 			case 2:
 				cout << "Iveskite suma USD, kuria noresite parduoti EUR: ";
 				cin >> suma;
-				if (suma < 0) {
-					cout << "Suma negali buti neigiama. Bandykite dar karta.\n";
+				if (suma <= 0) {
+					cout << "Suma negali buti neigiama arba lygi nuliui. Bandykite dar karta.\n";
 					break;
 				}
 				rezultatas = parduotiValiuta(suma, USD_Parduoti);
@@ -130,8 +130,8 @@ int main() {
 			case 3:
 				cout << "Iveskite suma INR, kuria noresite parduoti EUR: ";
 				cin >> suma;
-				if (suma < 0) {
-					cout << "Suma negali buti neigiama. Bandykite dar karta.\n";
+				if (suma <= 0) {
+					cout << "Suma negali buti neigiama arba lygi nuliui. Bandykite dar karta.\n";
 					break;
 				}
 				rezultatas = parduotiValiuta(suma, INR_Parduoti);
