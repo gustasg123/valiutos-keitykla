@@ -19,6 +19,13 @@ void rodytiMeniu() {
 	cout << "4. Iseiti.\n";
 }
 
+void rodytiValiutuMeniu() {
+    cout << "Pasirinkite valiuta:\n";
+    cout << "1. GBP\n";
+    cout << "2. USD\n";
+    cout << "3. INR\n";
+}
+
 double pirktiValiuta(double suma, double kursas) {
 	return suma * kursas;
 }
@@ -39,10 +46,7 @@ int main() {
 		switch (pasirinkimas) {
 		case 1:
 			cout << fixed << setprecision(2);
-			cout << "Pasirinkite valiuta:\n";
-			cout << "1. GBP\n";
-			cout << "2. USD\n";
-			cout << "3. INR\n";
+			rodytiValiutuMeniu();
 			int valiuta;
 			cin >> valiuta;
 			switch (valiuta) {
@@ -61,10 +65,7 @@ int main() {
 			break;
 		case 2:
 			cout << fixed << setprecision(2);
-			cout << "Pasirinkite valiuta:\n";
-			cout << "1. GBP\n";
-			cout << "2. USD\n";
-			cout << "3. INR\n";
+			rodytiValiutuMeniu();
 			cin >> valiuta;
 			switch (valiuta) {
 			case 1:
@@ -103,10 +104,7 @@ int main() {
 			break;
 		case 3:
 			cout << fixed << setprecision(2);
-			cout << "Pasirinkite valiuta:\n";
-			cout << "1. GBP\n";
-			cout << "2. USD\n";
-			cout << "3. INR\n";
+			rodytiValiutuMeniu();
 			cin >> valiuta;
 			switch (valiuta) {
 			case 1:
